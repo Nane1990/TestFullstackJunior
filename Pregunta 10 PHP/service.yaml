@@ -1,0 +1,7 @@
+# config/services.yaml
+services:
+   App\EventSubscriber\RequestSubscriber:
+        arguments:
+            $logger: '@logger'
+   tags:
+            - { name: 'kernel.event_subscriber' }
